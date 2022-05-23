@@ -80,6 +80,10 @@ nav a {
     padding: 10px;
     border-radius: 10px;
 }
+
+.logo {
+    user-select: none;
+}
 /* THIS IS FOR THE JAVASCRIPT I MADE WHEN 
 SCROLLING 
 DOWN SO THAT THE NAVBAR WILL STICK */

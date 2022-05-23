@@ -109,6 +109,9 @@ FOR LARGE SCREEN SIZES */
 .menu-btn:hover {
     background-color: aliceblue;
 }
+.logo {
+    user-select: none;
+}
 
 .logo::after {
     content: "";
