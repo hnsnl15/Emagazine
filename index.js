@@ -15,7 +15,7 @@ menuBtn.addEventListener('click', function() {
 
 window.addEventListener('scroll', function() {
     nav.classList.toggle('sticky', window.scrollY > 0);
-    logo.classList.toggle('logo2', window.scrollY > 0);
+    logoo.classList.toggle('logo2', window.scrollY > 0);
     logoo.classList.toggle('blackk', window.scrollY > 0);
     blackLinks[0].classList.toggle('blackk', window.scrollY > 0);
     blackLinks[1].classList.toggle('blackk', window.scrollY > 0);
