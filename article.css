@@ -2,14 +2,10 @@ main {
     height: auto;
     width: 100vw;
     padding: 10% 4%;
-    font-size: 1.5em;
+    font-size: 14pt;
     line-height: 2;
     display: flex;
     justify-content: space-evenly;
-}
-
-.prev-article {
-    font-size: 14pt;
 }
 
 @media screen and (max-width:850px) {
