@@ -98,7 +98,7 @@ nav, section {
 /* MEDIA QUERY */
 @media screen and (max-width: 600px) {
     header {
-        background-position-x: 60%;
+        background-position: right;
         background-size: cover;
     }
     .landing-page h1 {
@@ -109,7 +109,7 @@ nav, section {
         linear-gradient(to right, 
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.5));
-    }
+    }   
     .landing-page h1:hover::before {
         display: none;
     }
