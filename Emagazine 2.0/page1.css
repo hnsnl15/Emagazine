@@ -7,16 +7,6 @@
     linear-gradient(to right, 
     rgba(0,0,0,0.4),
     rgba(255,255,255,0.3));
-    --bg-keyframe1:rgba(0,0,0,0.3);
-    --bg-keyframe2:rgba(0,0,0,0.4);
-    --bg-keyframe3:rgba(0,0,0,0.5);
-    --bg-keyframe4:rgba(0,0,0,0.6);
-    --bg-keyframe5:rgba(0,0,0,0.3);
-    --bg-keyframe6:rgba(0,0,0,0.1);
-    --bg-keyframe7:rgba(255,255,255,0.1);
-    --bg-keyframe8:rgba(255,255,255,0.1);
-    --bg-keyframe9:rgba(255,255,255,0.1);
-    --bg-keyframe10:rgba(0,0,0,0.2);
 }
 
 
@@ -47,13 +37,12 @@ header {
     font-size: 10vmin;
     margin: 40px auto;
     padding: 20px;
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 20px;
     background: 
     var(--banner-background);
     user-select: none;
     position: relative;
-    animation: changingColor 8s ease-in-out infinite;
     z-index: 1;
 }
 .btn {
@@ -74,18 +63,6 @@ header {
     50% {opacity: 0.5;}
     75% {opacity: 0.75}
     100% {opacity: 1;}
-}
-@keyframes changingColor {
-    10% {background: var(--bg-keyframe1);}
-    20% {background: var(--bg-keyframe2);}
-    30% {background: var(--bg-keyframe3);}
-    40% {background: var(--bg-keyframe4);}
-    50% {background: var(--bg-keyframe5);}
-    60% {background: var(--bg-keyframe6);}
-    70% {background: var(--bg-keyframe7);}
-    80% {background: var(--bg-keyframe8);}
-    90% {background: var(--bg-keyframe9);}
-    100% {background: var(--bg-keyframe10);}
 }
 nav, section {
     animation: 
@@ -132,5 +109,8 @@ nav, section {
         linear-gradient(to right, 
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.5));
+    }
+    .landing-page h1:hover::before {
+        display: none;
     }
 }
