@@ -1,0 +1,76 @@
+/* RULESET FOR HEADER */
+header {
+    height: 100vh;
+    width: 100vw;
+    background: 
+    url(./Photos/AdobeStock_216604243.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* TEXT BANNER FOR HEADER LANDING PAGE */
+.landing-page {
+    color: white;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.landing-page h1 {
+    min-width: 60%;
+    max-width: 85%;
+    text-align: center;
+    font-size: 10vmin;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background:
+    linear-gradient(to right, 
+    rgba(0,0,0,0.1),
+    rgba(255,255,255,0.2));
+    animation: slides 1.3s ease;
+    user-select: none;
+}
+/* KEYFRAMES FOR LANDING-PAGE */
+@keyframes slides {
+    0% {opacity: 0.1;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75}
+    100% {opacity: 1;}
+}
+.btn {
+    color: white;
+    padding: 15px;
+    background:
+    rgba(255,255,255,0.1);
+    border: 1px solid white;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    animation: slides 2s ease;
+}
+/* HOVERING ELEMENT */
+.landing-page h1:hover {
+    background:
+    linear-gradient(to right,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.1));
+}
+.btn:hover {
+    background: 
+    rgba(0,0,0, 0.2);
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    header {
+        background-position-x: 60%;
+        background-size: cover;
+    }
+    .landing-page h1 {
+        padding: 20px;
+    }
+}

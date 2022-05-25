@@ -1,0 +1,25 @@
+/*GENERAL SETTING*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* MY BODY IS DISPLAYED IN GRID
+FOR THE PAGE 1 */
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+header {
+    grid-area: header;
+    font-family: 'lato',sans-serif;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
