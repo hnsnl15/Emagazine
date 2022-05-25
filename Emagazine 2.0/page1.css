@@ -1,3 +1,15 @@
+:root {
+    --banner-background:
+    linear-gradient(to right, 
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.5));
+    --hover-background-h1: 
+    linear-gradient(to right, 
+    rgba(0,0,0,0.4),
+    rgba(255,255,255,0.3));;
+}
+
+
 /* RULESET FOR HEADER */
 header {
     height: 100vh;
@@ -27,42 +39,58 @@ header {
     padding: 20px;
     border: 1px solid white;
     border-radius: 20px;
-    background:
-    linear-gradient(to right, 
-    rgba(0,0,0,0.1),
-    rgba(255,255,255,0.2));
-    animation: slides 1.3s ease;
+    background: 
+    var(--banner-background);
     user-select: none;
-}
-/* KEYFRAMES FOR LANDING-PAGE */
-@keyframes slides {
-    0% {opacity: 0.1;}
-    25% {opacity: 0.25;}
-    50% {opacity: 0.5;}
-    75% {opacity: 0.75}
-    100% {opacity: 1;}
+    position: relative;
+    z-index: 1;
 }
 .btn {
     color: white;
     padding: 15px;
-    background:
-    rgba(255,255,255,0.1);
     border: 1px solid white;
     border-radius: 7px;
     text-decoration: none;
     text-align: center;
     animation: slides 2s ease;
+    position: relative;
+    z-index: 1;
 }
-/* HOVERING ELEMENT */
-.landing-page h1:hover {
+/* KEYFRAMES FOR LANDING-PAGE */
+@keyframes slides {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75}
+    100% {opacity: 1;}
+}
+nav, section {
+    animation: 
+    slides 1.8s ease-in-out;
+}
+/* HOVERING ELEMENTS */
+.landing-page h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    transform: scaleX(0);
     background:
-    linear-gradient(to right,
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.1));
+    var(--banner-background);
+    transform-origin: left;
+    transition: all 1s ease-in-out;
+    z-index: -1;
+}
+.landing-page h1:hover::before {
+    background: 
+    var(--hover-background-h1);
+    transform: scaleX(1);
 }
 .btn:hover {
-    background: 
-    rgba(0,0,0, 0.2);
+    background: var(--hover-background-h1);
 }
 /* MEDIA QUERY */
 @media screen and (max-width: 600px) {
@@ -72,5 +100,11 @@ header {
     }
     .landing-page h1 {
         padding: 20px;
+    }
+    .landing-page h1:hover {
+        background:
+        linear-gradient(to right, 
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.5));
     }
 }
