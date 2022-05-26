@@ -19,6 +19,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 /* TEXT BANNER FOR HEADER LANDING PAGE */
 .landing-page {
@@ -55,6 +56,11 @@ header {
     animation: slides 2s ease;
     position: relative;
     z-index: 1;
+}
+/* MAIN SECTION RULESET SETTING UP */
+main {
+    height: 100vh;
+    width: 100vw;
 }
 /* KEYFRAMES FOR LANDING-PAGE */
 @keyframes slides {

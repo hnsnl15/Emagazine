@@ -12,6 +12,7 @@ body {
     "header"
     "main"
     "footer";
+    overflow-x: hidden;
 }
 header {
     grid-area: header;
