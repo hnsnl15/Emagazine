@@ -25,3 +25,30 @@ main {
 footer {
     grid-area: footer;
 }
+/* LOADING PAGE */
+.loading  {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    color: black;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vmin;
+    animation: loader 4s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
