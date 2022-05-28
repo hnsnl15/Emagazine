@@ -199,7 +199,6 @@ main {
 }
 .section4 article p {
     font-size: var(--text-size-2);
-    padding: var(--padding-bottom1) 0;
 }
 /* THIS IS MY SECTION 5 */
 .section5 {
@@ -227,7 +226,6 @@ main {
     text-align: center;
     line-height: var(--line-height1);
     font-size: var(--text-size-2);
-    padding: 0 20px;
 }
 .section5-card h1 {
     font-size: var(--title-text);
@@ -319,6 +317,6 @@ main {
         overflow-y: auto;
     }
     p {
-        padding: 30px;
+        margin: 0 20px;
     }
 }
