@@ -184,6 +184,9 @@ main {
     justify-content: center;
     align-items: center;
     margin: var(--padding-top1) 0;
+    background: #000000;
+    color: white;
+    padding: 50px 0;
 }
 .section4 article {
     text-align: center;
@@ -199,6 +202,7 @@ main {
 }
 .section4 article p {
     font-size: var(--text-size-2);
+    margin: 20px 20px;
 }
 /* THIS IS MY SECTION 5 */
 .section5 {
@@ -229,6 +233,9 @@ main {
 }
 .section5-card h1 {
     font-size: var(--title-text);
+}
+.section5-card p {
+    margin: 0 20px;
 }
 #about-photo {
     position: absolute;
