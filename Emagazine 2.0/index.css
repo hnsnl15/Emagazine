@@ -17,6 +17,8 @@ body {
     animation: load 2000ms ease-in-out;
     font-family: 'lato',sans-serif;
     width: 100vw;
+    background: #F7F7F7;
+    transition: all 300ms ease-in-out;
 }
 header {
     grid-area: header;
@@ -32,7 +34,7 @@ main section img {
     box-shadow: var(--box-shadow-img);
     position: relative;
     width: 70vmin;
-    height: 60vmin;
+    height: 50vmin;
 }
 
 @keyframes load {

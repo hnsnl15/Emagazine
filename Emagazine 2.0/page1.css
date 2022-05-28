@@ -21,7 +21,7 @@
     --btn-text1: 1.4vmin;
     --btn-width2: 15vmin;
     --btn-height2: 6vmin;
-    --btn-text2: 1.5vmin;
+    --btn-text2: 1.8vmin;
     --photo-border-radius: 20px;
     --box-shadow-img: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     --para-max-width: 800px;
@@ -151,8 +151,6 @@ main {
 } 
 .section2 figure img {
     position: relative;
-    width: 70vmin;
-    height: 60vmin;
 }
 /* THIS FOR SECTION 3 */
 .photo-header {
@@ -220,7 +218,7 @@ main {
 .section5-card {
     position: relative;
     color: black;
-    background: white;
+    background: #E1E5EA;
     max-width: var(--para-max-width);
     height: 60vh;
     margin-top: var(--padding-bottom1);
@@ -230,6 +228,7 @@ main {
     text-align: center;
     line-height: var(--line-height1);
     font-size: var(--text-size-2);
+    border-radius: var(--photo-border-radius);
 }
 .section5-card h1 {
     font-size: var(--title-text);
@@ -239,12 +238,13 @@ main {
 }
 #about-photo {
     position: absolute;
-    top: -200px;
+    top: -160px;
     height: 250px;
     width: 250px;
     background: url('./Photos/AdobeStock_220900649.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: var(--small-box-border-radius);
 }
 /* HOVERING ELEMENTS */
 .landing-page h1::before {
@@ -316,12 +316,18 @@ main {
         flex-direction: column;
         align-items: center;
     }
+    .section5 {
+        padding: 30px;
+    }
     .section5-card {
-        margin-top: 170px;
+        margin: 170px 0 0 0;
         padding: 300px 20px;
     }
     .section5-card article {
         overflow-y: auto;
+    }
+    #about-photo {
+        top: -200px;
     }
     p {
         margin: 0 20px;
