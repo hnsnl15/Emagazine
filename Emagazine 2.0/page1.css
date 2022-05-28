@@ -155,11 +155,26 @@ main {
     height: 60vmin;
 }
 /* THIS FOR SECTION 3 */
+.photo-header {
+    background: url('./Photos/AdobeStock_199440908.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100vw;
+}
 .section3 {
     margin: var(--padding-top1) 0;
+    background: url('./Photos/AdobeStock_199440908.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .section3 video {
-    width: 100vw;
+    width: 85vw;
+    border-radius: var(--photo-border-radius);
 }
 /* THIS IS SECTION 4 */
 .section4 {
@@ -194,13 +209,13 @@ main {
     background-attachment: fixed;
     height: 130vh;
     width: 100vw;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: var(--padding-top1) 0 0 0;
 }
 .section5-card {
+    position: relative;
     color: black;
     background: white;
     max-width: var(--para-max-width);
@@ -212,16 +227,19 @@ main {
     text-align: center;
     line-height: var(--line-height1);
     font-size: var(--text-size-2);
+    padding: 0 20px;
 }
 .section5-card h1 {
     font-size: var(--title-text);
 }
 #about-photo {
     position: absolute;
-    top: 100px;
+    top: -200px;
     height: 250px;
     width: 250px;
-    background: blue;
+    background: url('./Photos/AdobeStock_220900649.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* HOVERING ELEMENTS */
 .landing-page h1::before {
@@ -295,6 +313,10 @@ main {
     }
     .section5-card {
         margin-top: 170px;
+        padding: 300px 20px;
+    }
+    .section5-card article {
+        overflow-y: auto;
     }
     p {
         padding: 30px;
