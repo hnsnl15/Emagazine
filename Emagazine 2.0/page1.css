@@ -53,7 +53,6 @@ header {
     border-radius: 7px;
     text-decoration: none;
     text-align: center;
-    animation: slides 2s ease;
     position: relative;
     z-index: 1;
 }
@@ -62,22 +61,7 @@ main {
     height: 100vh;
     width: 100vw;
 }
-/* KEYFRAMES FOR LANDING-PAGE */
-@keyframes slides {
-    0% {opacity: 0;}
-    25% {opacity: 0.25;}
-    50% {opacity: 0.5;}
-    75% {opacity: 0.75}
-    100% {opacity: 1;}
-}
-nav, section {
-    animation: 
-    slides 1.8s ease-in-out;
-}
 /* HOVERING ELEMENTS */
-.landing-page h1:hover {
-    animation: none;
-}
 .landing-page h1::before {
     content: "";
     position: absolute;

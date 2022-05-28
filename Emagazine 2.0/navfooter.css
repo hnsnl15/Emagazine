@@ -5,8 +5,35 @@ nav {
     padding: 40px;
     font-size: 1.3rem;
     height: 20vh;
+    transition: all 300ms ease-in;
+    transform-origin: top;
 }
-
+.sticky {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-size: 1.3rem;
+    height: 20vh;
+    position: fixed;
+    background: white;
+    color: black;
+    z-index: 2;
+    width: 100vw;
+    animation: scrollsUp 400ms ease-in-out;
+}
+/* ANIMATION FOR NAV WHEN TOGGLED DUE TO SCROLL */
+@keyframes scrollsUp {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+/* TOGGLED WHEN SROLLED IN LARGE SCREENS */
+.blackItems {
+    color: black;
+}
 nav a {
     text-decoration: none;
     font-family: 'Lato',sans-serif;
@@ -35,7 +62,6 @@ nav li {
     border-radius: 5px;
     padding: 2px;
 }
-
 /* FOR HOVERING LINKS */
 .navbar a:hover {
     color:
@@ -67,7 +93,7 @@ nav li {
     #logo {
         transition: all 0.4s ease-in-out;
     }
-    .navbar {
+    .navbar-mobile {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -83,9 +109,6 @@ nav li {
     .mobile-menu {
         margin-top: 0;
     }
-    .blackItems {
-        color: black;
-    }
     .menu-btn-no-bg {
         background: none;
     }
@@ -97,6 +120,9 @@ nav li {
     }
     .scrollUp {
         margin-top: -900px;
+    }
+    .noDisplay {
+        display: none;
     }
     /* HOVERING ELEMENTS */
     .navbar a:hover {
