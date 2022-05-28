@@ -332,16 +332,51 @@ main {
     }
     .section5-card {
         overflow-y: auto;
-        height: 100vh;
-        padding: 40px 0;
+        height: 70vh;
+        padding: 5px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .section5-card article {
-        margin-top: 360px;
+        margin: 40px 0;
     }
     #about-photo {
-        top: 20px;
+        position: static;
+        margin: 0;
     }
     p {
         margin: 0 20px;
+    }
+}
+@media screen and (max-width: 386px) {
+    .section5 {
+        padding: 30px;
+    }
+    .section5-card {
+        height: 80vh;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 365px) {
+    .section5 {
+        padding: 30px;
+    }
+    .section5-card {
+        height: 90vh;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 327px) {
+    .section5 {
+        padding: 30px;
+    }
+    .section5-card {
+        height: 90vh;
+        justify-content: center;
+    }
+    .section5-card p {
+        margin: 0;
+        padding: 0;
     }
 }
