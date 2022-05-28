@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
     animation: load 2000ms ease-in-out;
     font-family: 'lato',sans-serif;
+    width: 100vw;
 }
 header {
     grid-area: header;
@@ -25,6 +26,13 @@ main {
 }
 footer {
     grid-area: footer;
+}
+main section img {
+    border-radius: var(--photo-border-radius);
+    box-shadow: var(--box-shadow-img);
+    position: relative;
+    width: 70vmin;
+    height: 60vmin;
 }
 
 @keyframes load {
