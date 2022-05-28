@@ -318,7 +318,7 @@ main {
     }
     .section3 {
         width: 100vw;
-        height: 70vh;
+        height: 50vh;
     }
     .section3 video {
         width: 100vw;
@@ -331,15 +331,15 @@ main {
         padding: 30px;
     }
     .section5-card {
-        margin: 170px 0 0 0;
-        padding: 300px 0px;
         overflow-y: auto;
+        height: 100vh;
+        padding: 40px 0;
     }
     .section5-card article {
-        overflow-y: auto;
+        margin-top: 360px;
     }
     #about-photo {
-        top: -200px;
+        top: 20px;
     }
     p {
         margin: 0 20px;
