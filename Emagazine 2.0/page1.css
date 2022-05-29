@@ -238,8 +238,18 @@ main {
     var(--hover-background-h1);
     transform: scaleX(1);
 }
+@keyframes exploreNow {
+    from {
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .btn:hover {
     background: var(--hover-background-h1);
+    transform-origin: left;
+    animation: exploreNow 400ms ease-in-out;
 }
 .cardInSection2-btn:hover {
     background: transparent;
