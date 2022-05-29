@@ -1,0 +1,334 @@
+/* RULESET FOR HEADER */
+header {
+    height: 100vh;
+    width: 100vw;
+    background: 
+    url(./Photos/AdobeStock_216604243.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+/* TEXT BANNER FOR HEADER LANDING PAGE */
+.landing-page {
+    color: white;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.landing-page h1 {
+    min-width: 60%;
+    max-width: 85%;
+    text-align: center;
+    font-size: 10vmin;
+    margin: 40px auto;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background: 
+    var(--banner-background);
+    user-select: none;
+    position: relative;
+    z-index: 1;
+}
+.btn {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-for-btn);
+    border: 1px solid white;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: var(--btn-text2);
+    width: var(--btn-width2);
+    height: var(--btn-height2);
+}
+/* MAIN SECTION RULESET SETTING UP */
+main {
+    height: auto;
+    width: 100vw;
+    position: relative;
+}
+/* THIS IS SECTION 1 */
+.section1 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: var(--padding-top1) 0;
+}
+.section1 article {
+    max-width: var(--para-max-width);
+    line-height: var(--line-height1);
+}
+.section1 h1 {
+    font-size: var(--title-text);
+}
+#theTitle {
+    font-size: var(--text-size-1);
+}
+.section1 p {
+    font-size: var(--text-size-2);
+}
+/* THIS IS SECTION 2 */
+.section2 {
+    width: 100vw;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+}
+.cardsInSection2 {
+    display: flex;
+    gap: 5px;
+}
+.cardsInSection2 figure {
+    position: relative;
+}
+.cardInSection2-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    border-radius: var(--photo-border-radius);
+    transition: all 300ms ease-in;
+    transform-origin: center;
+}
+.cardInSection2-btn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: var(--padding-for-btn);
+    border-radius: var(--small-box-border-radius);
+    width: var(--btn-width1);
+    height: var(--btn-height1);
+    font-size: var(--btn-text1);
+} 
+.section2 figure img {
+    position: relative;
+}
+/* THIS FOR SECTION 3 */
+.photo-header {
+    background: url('./Photos/AdobeStock_199440908.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100vw;
+}
+.section3 {
+    margin: var(--padding-top1) 0;
+    background: url('./Photos/AdobeStock_199440908.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section3 video {
+    width: 85vw;
+    border-radius: var(--photo-border-radius);
+}
+/* THIS IS SECTION 4 */
+.section4 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--padding-top1) 0;
+    background: #000000;
+    color: white;
+    padding: 50px 0;
+}
+.section4 article {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: var(--para-max-width);
+    line-height: var(--line-height1);
+}
+.section4 article h1 {
+    font-size: var(--title-text);
+}
+.section4 article p {
+    font-size: var(--text-size-2);
+    margin: 20px 20px;
+}
+/* THIS IS MY SECTION 5 */
+.section5 {
+    background: url('./Photos/AdobeStock_199440908.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 130vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--padding-top1) 0 0 0;
+}
+.section5-card {
+    position: relative;
+    color: black;
+    background: #E1E5EA;
+    max-width: var(--para-max-width);
+    height: 60vh;
+    margin-top: var(--padding-bottom1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: var(--line-height1);
+    font-size: var(--text-size-2);
+    border-radius: var(--photo-border-radius);
+}
+.section5-card h1 {
+    font-size: var(--title-text);
+}
+.section5-card p {
+    margin: 0 20px;
+}
+#about-photo {
+    position: absolute;
+    top: -160px;
+    height: 250px;
+    width: 250px;
+    background: url('./Photos/AdobeStock_220900649.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--small-box-border-radius);
+}
+/* HOVERING ELEMENTS */
+.landing-page h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    transform: scaleX(0);
+    background:
+    var(--banner-background);
+    transform-origin: left;
+    transition: all 1s ease-in-out;
+    z-index: -1;
+}
+.landing-page h1:hover::before {
+    background: 
+    var(--hover-background-h1);
+    transform: scaleX(1);
+}
+@keyframes exploreNow {
+    from {
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.btn:hover {
+    background: var(--hover-background-h1);
+    transform-origin: left;
+    animation: exploreNow 400ms ease-in-out;
+}
+.cardInSection2-btn:hover {
+    background: transparent;
+}
+.cardInSection2-btn a::before {
+    content: 'Read more';
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: var(--small-box-border-radius);
+    background: white;
+    transform:  scaleY(0);
+    transform-origin: top;
+    transition: all 300ms ease-in-out;
+}
+.cardInSection2-btn a:hover::before {
+    background: white;
+    transform: scaleY(1);
+}
+.cardInSection2-btn a:hover {
+    color: black;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 850px) {
+    header {
+        background: black;
+    }
+    .landing-page h1 {
+        padding: 20px;
+    }
+    .landing-page h1:hover {
+        background:
+        linear-gradient(to right, 
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.5));
+    }   
+    .landing-page h1:hover::before {
+        display: none;
+    }
+    .cardsInSection2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section3 {
+        width: 100vw;
+        height: 50vh;
+    }
+    .section3 video {
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .photo-header {
+        display: none;
+    }
+    .section5 {
+        padding: 30px;
+    }
+    .section5-card {
+        overflow-y: auto;
+        height: 100vh;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section5-card article {
+        margin: 40px 0;
+    }
+    #about-photo {
+        display: none;
+    }
+    p {
+        margin: 0 20px;
+    }
+}

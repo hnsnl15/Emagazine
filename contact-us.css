@@ -1,0 +1,113 @@
+/* THIS IS THE MAIN SECTION */
+main {
+    height: auto;
+    width: 100vw;
+    background: url('./Photos/AdobeStock_216604243.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: white;
+}
+/* THIS IS THE FORM RULESET */
+.contact-page-sect1 {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contact-form h1 {
+    font-size: var(--title-text);
+}
+.contact-form div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.contact-form-name,
+.contact-form-email,
+.text-area, .form-btn {
+    margin: 10px auto;
+}
+.contact-form-name input,
+.contact-form-email input {
+    margin: 10px 5px;
+    width: 400px;
+    height: 50px;
+    max-width: 300px;
+    padding: 3px 10px;
+    font-size: var(--text-size-2);
+    border-radius: var(--small-box-border-radius);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+}
+.contact-form-name label,
+.contact-form-email label {
+    text-align: right;
+    display: inline-block;
+    min-width: 50px;
+    font-size: var(--text-size-2);
+}
+textarea {
+    margin: 20px 0;
+    width: 400px;
+    height: 300px;
+    max-width: 400px;
+    resize: none;
+    font-size: var(--text-size-2);
+    font-family: 'Lato', sans-serif;
+    color: white;
+    padding: 20px;
+    border-radius: var(--large-box-border-radius);
+    background: transparent;
+    border: 1px solid white;
+}
+.form-btn input {
+    width: 50px;
+    height: 30px;
+    max-width: 50px;
+    max-height: 30px;
+    border-radius: var(--small-box-border-radius);
+    transition: all 300ms ease-in-out;
+    margin: 0 10px;
+    color: black;
+}
+/* HOVER FOR BLOG */
+.blog-nav-text a:hover {
+    color: rgba(0,0,0,0.5);
+}
+.blog-nav-text2 a:hover {
+    color: rgba(255,255,255, 0.5);
+}
+.section1-blog-img:hover::before {
+    opacity: 0;
+}
+.section1-blog h1 a:hover, 
+.section1-blog p a:hover {
+    color: rgba(255,255,255, 0.5);
+}
+.form-btn input:hover {
+    background: var(--hover-background);
+    color: white;
+}
+/* MEDIA QUERY HEREE */
+@media screen and (max-width:850px) {
+    textarea {
+        width: 300px;
+        margin: 0 20px;
+    }
+
+    .contact-form-name input,
+    .contact-form-email input {
+        width: 230px;
+    }
+}
