@@ -101,8 +101,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     border-radius: var(--photo-border-radius);
+    transition: all 300ms ease-in;
+    transform-origin: center;
 }
 .cardInSection2-btn a {
     position: relative;
@@ -238,6 +240,9 @@ main {
 }
 .btn:hover {
     background: var(--hover-background-h1);
+}
+.cardInSection2-btn:hover {
+    background: transparent;
 }
 .cardInSection2-btn a::before {
     content: 'Read more';
