@@ -110,4 +110,7 @@ textarea {
     .contact-form-email input {
         width: 230px;
     }
+    main {
+        background: black;
+    }
 }
