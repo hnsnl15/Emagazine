@@ -5,6 +5,35 @@
     margin: 0;
     -webkit-tap-highlight-color: transparent;
 }
+:root {
+    --banner-background:
+    linear-gradient(to right, 
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.5));
+    --hover-background-h1: 
+    linear-gradient(to right, 
+    rgba(0,0,0,0.4),
+    rgba(255,255,255,0.3));
+    --small-box-border-radius: 7px;
+    --large-box-border-radius: 20px;
+    --text-size-1: 1.5rem;
+    --text-size-2: 1.3rem;
+    --title-text: 2.5rem;
+    --line-height1: 2;
+    --padding-top1: 50px;
+    --padding-bottom1: 30px;
+    --padding-for-btn: 0px;
+    --btn-width1: 15vmin;
+    --btn-height1: 8vmin;
+    --btn-text1: 1.4vmin;
+    --btn-width2: 15vmin;
+    --btn-height2: 6vmin;
+    --btn-text2: 1.8vmin;
+    --photo-border-radius: 20px;
+    --box-shadow-img: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    --para-max-width: 800px;
+    --hover-links: rgba(255,255,255,0.5);;
+}
 /* MY BODY IS DISPLAYED IN GRID
 FOR THE PAGE 1 */
 body {
@@ -29,7 +58,7 @@ main {
 footer {
     grid-area: footer;
 }
-main section img {
+main section img, .section1-blog-img::before {
     border-radius: var(--photo-border-radius);
     box-shadow: var(--box-shadow-img);
     position: relative;

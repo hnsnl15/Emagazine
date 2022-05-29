@@ -1,0 +1,89 @@
+/* MAIN SECTION BLOG */
+main {
+    height: auto;
+    width: 100vw;
+    background: #141E27;
+    color: white;
+}
+/* SECTION 1 BLOG  */
+.section1-blog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: var(--padding-top1);
+    gap: 30px;
+}
+.section1-blog figure {
+    max-width: var(--para-max-width);
+}
+.section1-blog figcaption {
+    max-width: 550px;
+}
+.section1-blog h1 a {
+    font-size: var(--title-text);
+    color: white;
+    text-decoration: none;
+}
+.section1-blog p a {
+    font-size: var(--text-size-2);
+    color: white;
+    text-decoration: none;
+}
+.section1-blog-img {
+    position: relative;
+    margin: 20px 0;
+}
+.section1-blog-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0,0,0,0.5);
+    z-index: 1;
+    transform-origin: center;
+    transition: 250ms ease-in;
+}
+    
+/* HOVER FOR BLOG */
+.blog-nav-text a:hover {
+    color: rgba(0,0,0,0.5);
+}
+.blog-nav-text2 a:hover {
+    color: rgba(255,255,255, 0.5);
+}
+.section1-blog-img:hover::before {
+    opacity: 0;
+}
+.section1-blog h1 a:hover, 
+.section1-blog p a:hover {
+    color: rgba(255,255,255, 0.5);
+}
+@keyframes cardsHover {
+    from {
+        transform: translateY(1);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 850px) {
+    main{
+        height: 122vh;
+    }
+    .section1-blog {
+        flex-direction: columns;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    #logo {
+        color: black;
+    }
+    .navbar a {
+        color: black;
+    }
+}
