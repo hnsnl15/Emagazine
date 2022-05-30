@@ -127,6 +127,9 @@ footer {
     text-align: center;
     font-size: var(--title-text);
 }
+.rights h2, .rights p {
+    user-select: none;
+}
 .rights p {
     font-size: var(--btn-text2);
 }
