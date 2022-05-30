@@ -24,6 +24,9 @@ main {
     max-width: var(--para-max-width);
     margin: 0 40px;
 }
+#tiny-text {
+    text-align: center;
+}
 .post-sect1-figure h1 {
     font-size: var(--title-text);
 }
